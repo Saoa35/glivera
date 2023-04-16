@@ -1,0 +1,87 @@
+@import "../../styles/mixins.scss";
+
+.board_container {
+  @include flex_center;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .title {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 8%;
+
+    div {
+      width: 35px;
+      height: 35px;
+      margin-top: 30px;
+    }
+
+    p {
+      margin-left: 5px;
+      // font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 39px;
+      letter-spacing: 0.01em;
+      color: #000000;
+
+      span {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.01em;
+        color: #838383;
+      }
+    }
+  }
+
+  .board_list {
+    width: 100%;
+    text-align: center;
+    flex: 1;
+
+    ul {
+      width: inherit;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        width: 90%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 15px;
+        margin: 0 5%;
+        padding: 0 5%;
+        cursor: pointer;
+
+        div {
+          display: flex;
+          width: 70%;
+
+          p {
+            font-weight: 500;
+            font-size: 3vh;
+            line-height: 21px;
+            color: #9197b3;
+          }
+
+          :first-child {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .board_footer {
+    flex-shrink: 0;
+    // padding: 10px;
+    background-color: #f0f0f0;
+  }
+}
