@@ -29,7 +29,7 @@ main {
     width: 75%;
 
     .greetings {
-      margin: 4% 10% 5% 8%;
+      margin: 2% 15% 4% 5%;
       font-weight: 500;
       font-size: 24px;
       line-height: 36px;
@@ -37,7 +37,7 @@ main {
     }
 
     .customers {
-      margin: 0 8%;
+      margin: 0 5% 10% 5%;
     }
   }
 }
@@ -60,4 +60,51 @@ main {
   border: 2px solid #9197b3;
   border-radius: 25%;
   @include flex_center;
+}
+
+.active {
+  color: #008767;
+  background-color: rgba(22, 192, 152, 0.38);
+  width: 75%;
+  border-radius: 4px;
+  border: 1px solid #00b087;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inactive {
+  color: #df0404;
+  background-color: #ffc5c5;
+  width: 75%;
+  border-radius: 4px;
+  border: 1px solid #df0404;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4%;
+
+  :nth-child(2) {
+    color: #ffffff;
+    background-color: #5932ea;
+  }
+
+  button {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #404b52;
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
 }
