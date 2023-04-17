@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./Dashboard.module.scss";
 
-export const Dashboard = () => {
+export const Dashboard = ({ userName, occupation }) => {
   const [selectedIndex, setSelectedIndex] = useState(2);
 
   const handleItemClick = (index) => {
@@ -70,7 +70,7 @@ export const Dashboard = () => {
                 <p className="svgStyle"></p>
                 <p>Customers</p>
               </div>
-              <p>
+              <p className={styles.board_arrow}>
                 <svg
                   width="6"
                   height="10"
@@ -210,8 +210,8 @@ export const Dashboard = () => {
           </svg>
         </div>
         <div>
-          <p>Evano</p>
-          <p>Project Manager</p>
+          <p>{userName}</p>
+          <p>{occupation}</p>
         </div>
       </div>
     </div>

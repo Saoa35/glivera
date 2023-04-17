@@ -108,3 +108,39 @@ main {
     cursor: pointer;
   }
 }
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    aside {
+      width: 100%;
+    }
+    section {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 690px) {
+  main {
+    scale: 0.95;
+  }
+}
+
+@media (max-width: 550px) {
+  main {
+    scale: 0.9;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    scale: 0.7;
+  }
+}
+
+@media (max-width: 460px) {
+  main {
+    scale: 0.6;
+  }
+}
